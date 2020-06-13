@@ -1,0 +1,9 @@
+<p>
+  Hi, <%= @seller.first_name %> <%= @seller.last_name %>
+</p>
+
+<p>You have register a bid <%= @bid.name %> on item <%= @item.name %>.</p>
+
+<a href="<%=
+  "#{Rails.configuration.ui_server_url}/item/#{@item.id}/bid/#{@bid.id}"
+%>">Click here</a> to View your Bid.

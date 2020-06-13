@@ -1,0 +1,9 @@
+<p>
+  Hi, <%= @buyer.first_name %> <%= @buyer.last_name %>
+</p>
+
+<p>Your Request <%= @item.name %> is successfully posted.</p>
+
+<a href="<%=
+  "#{Rails.configuration.ui_server_url}/item/#{@item.id}"
+%>">Click here</a> to View your request.

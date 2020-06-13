@@ -1,0 +1,8 @@
+<p>
+  Hi, <%= @seller.first_name %> <%= @seller.last_name %>
+</p>
+
+<p>A new item
+  <a href="<%=
+    "#{Rails.configuration.ui_server_url}/item/#{@item.id}"
+  %>"><%= @item.name %></a> request is posted.</p>

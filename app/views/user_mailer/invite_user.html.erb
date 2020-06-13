@@ -1,0 +1,10 @@
+<p>
+  Hi, <%= @invited_user.email %>
+</p>
+
+<p>Your Friend <%= @user.first_name %> <%= @user.last_name %>, invited you to
+  join DDM</p>
+
+Please <a href="<%=
+  "#{Rails.configuration.ui_server_url}/user/verification/#{@invited_user.token}"
+%>">Click here</a> to signup.
